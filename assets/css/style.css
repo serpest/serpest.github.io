@@ -1,19 +1,26 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
-border:0;
-font:inherit;
-font-size:100%;
-margin:0;
-padding:0;
-vertical-align:baseline;
+border: 0;
+font: inherit;
+font-size: 100%;
+margin: 0;
+padding: 0;
+vertical-align: baseline;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-display:block;
+display: block;
 }
 
-html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+html, body {
+	background: #181818;
+	font-family: 'Lato', helvetica, arial, sans-serif;
+	font-size: 16px;
+	color: #222;
+}
 
-.clear {clear: both;}
+.clear {
+	clear: both;
+}
 
 p {
 	font-size: 1em;
@@ -62,7 +69,7 @@ p {
 	width: 100%;
 	height: auto;
 	-webkit-border-radius: 50px;
-	border-radius: 50px;
+	border-radius: 100%;
 }
 
 #name {
@@ -85,8 +92,7 @@ p {
 }
 
 #contactDetails ul li a, a[href^=tel] {
-	color: #444; 
-	text-decoration: none;
+	color: inherit;
 	-webkit-transition: all .3s ease-in;
 	-moz-transition: all .3s ease-in;
 	-o-transition: all .3s ease-in;
@@ -120,6 +126,19 @@ section:last-child {
 .sectionContent {
 	float: right;
 	width: 72.5%;
+}
+
+.sectionContent article p a, a[href^=tel] {
+	color: #444;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+.sectionContent article p a:hover { 
+	color: #cf8a05;
 }
 
 .sectionTitle h1 {
@@ -161,9 +180,9 @@ section:last-child {
 	}
 	
 	.keySkills {
-	-moz-column-count:2;
-	-webkit-column-count:2;
-	column-count:2;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
 	}
 }
 
@@ -195,9 +214,9 @@ section:last-child {
 	}
 	
 	.keySkills {
-		-moz-column-count:2;
-		-webkit-column-count:2;
-		column-count:2;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
 	}
 }
 
@@ -216,9 +235,9 @@ section:last-child {
 
 	
 	.keySkills {
-	-moz-column-count:1;
-	-webkit-column-count:1;
-	column-count:1;
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
 	}
 	
 	#name h1 {
