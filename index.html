@@ -7,19 +7,25 @@
 		<meta name="author" content="serpest">
 		<meta name="viewport" content="width=device-width"/>
 		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300'>
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700|Lato:400,300'>
 	</head>
-	<body id="top">
-		<div id="cv" class="instaFade">
+	<body>
+		<ul id="navBar">
+			<li class="navBarItem"><a href="#">Home</a></li>
+			<li class="navBarItem"><a href="#personalProfile">Personal profile</a></li>
+			<li class="navBarItem"><a href="#projects">Projects</a></li>
+			<li class="navBarItem"><a href="#skills">Skills</a></li>
+		</ul>
+		<div id="profile">
 			<div class="mainDetails">
-				<div id="headshot" class="quickFade">
-					<img src="assets/img/profilePicture.png" alt="serpest" />
+				<div id="profilePicture">
+					<img src="assets/img/profilePicture.png" alt="serpest"/>
 				</div>
 				<div id="name">
-					<h1 class="quickFade delayTwo">serpest</h1>
-					<h2 class="quickFade delayThree">Developer</h2>
+					<h1>serpest</h1>
+					<h2>Developer</h2>
 				</div>
-				<div id="contactDetails" class="quickFade delayFour">
+				<div id="contactDetails">
 					<ul>
 						<li>Email: <a href="mailto:serpest@protonmail.com" target="_blank">serpest@protonmail.com</a></li>
 						<li>Twitter: <a href="https://twitter.com/serpest0">serpest0</a></li>
@@ -28,19 +34,20 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<div id="mainArea" class="quickFade delayFive">
-				<section>
+			<div id="mainArea">
+				<section id="personalProfile">
 					<article>
 						<div class="sectionTitle">
 							<h1>Personal Profile</h1>
 						</div>
 						<div class="sectionContent">
-							<p>I’m a young self-taught in programming and I live in Italy.<br>I started to study Ruby when I was 13 years old and from then on I study programming and related stuff in my free time.<br>I enjoy programming in Java, C++, C and Python and I’ve experience in Git, Maven, JavaFX, Java AWT and Qt.</p>
+							<p>I’m a young self-taught in programming and I live in Italy.</p>
+							<p>I started to study Ruby when I was 13 years old and from then on I study programming and related stuff in my free time.<br>I enjoy programming in Java, C++, C and Python and I’ve experience in Git, Maven, JavaFX, Java AWT and Qt.</p>
 						</div>
 					</article>
 					<div class="clear"></div>
 				</section>
-				<section>
+				<section id="projects">
 					<div class="sectionTitle">
 						<h1>Projects</h1>
 					</div>
@@ -68,12 +75,12 @@
 					</div>
 					<div class="clear"></div>
 				</section>
-				<section>
+				<section id="skills">
 					<div class="sectionTitle">
-						<h1>Key Skills</h1>
+						<h1>Skills</h1>
 					</div>
 					<div class="sectionContent">
-						<ul class="keySkills">
+						<ul class="skillsList">
 							<li>Problem-solving</li>
 							<li>Attention to detail</li>
 							<li>Time management</li>
