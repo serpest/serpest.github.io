@@ -129,7 +129,7 @@ section:first-child {
 	width: 75%;
 }
 
-.sectionContent h2 {
+* h2 {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	font-size: 1.5em;
 	margin-bottom: -2px;
@@ -158,9 +158,54 @@ p {
 
 .skillsList {
 	padding: 0;
+	margin-bottom: 10px;
 	list-style-type: none;
+}
+
+.generalSkillsList, .toolsTechnologiesList {
 	column-count: 3;
 }
+
+.programmingLanguagesList {
+	column-count: 1;
+}
+
+.skillsList li:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.skillBarContainer {
+	float: right;
+	width: 100%;
+	background-color: #ddd;
+	border: 1px solid #0336FF;
+}
+
+.skillBar {
+	text-align: right;
+	padding-right: 20px;
+	line-height: 16px;
+	color: white;
+	background-color: #FFDE03;
+	color: black;
+}
+
+.javaSkill {
+	width: 90%;
+}
+.pythonSkill {
+	width: 70%;
+}
+.CCppSkill {
+	width: 60%;
+}
+.HTMLaSkill {
+	width: 60%;
+}
+.CSSSkill {
+	width: 40%;
+}
+
 
 
 
@@ -194,7 +239,7 @@ p {
 		width: 100%;
 	}
 
-	.skillsList {
+	.generalSkillsList, .toolsTechnologiesList {
 		column-count: 2;
 	}
 }
@@ -203,7 +248,7 @@ p {
 
 @media screen and (max-width: 350px) {
 
-	.skillsList {
+	.generalSkillsList, .toolsTechnologiesList {
 		column-count: 1;
 	}
 
