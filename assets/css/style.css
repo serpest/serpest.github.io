@@ -1,22 +1,27 @@
+:root {
+	--primaryColor: #0336FF;
+	--secondaryColor: #FFDE03;
+	--background-color: white;
+}
+
 * {
 	font: inherit;
 	font-size: 100%;
 	margin: 0;
 }
 
-html, body {
+html {
 	font-family: 'Lato', helvetica, arial, sans-serif;
 	font-size: 16px;
-	background-color: #FFDE03;
+	background-color: var(--secondaryColor);
 }
 
 #navBar {
 	list-style-type: none;
-	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: white;
-	border-bottom: 2px solid #0336FF;
+	background-color: var(--background-color);
+	border-bottom: 2px solid var(--primaryColor);
 
 }
 
@@ -26,25 +31,23 @@ html, body {
 
 .navBarItem a {
 	display: block;
-	color: black;
 	text-align: center;
 	padding: 16px 16px;
 	text-decoration: none;
 }
 
 * a:hover {
-	background-color: #FFDE03;
-	color: black;
+	background-color: var(--secondaryColor);
 }
 
 #profile {
-	margin: 8px 8px;
+	margin: 8px;
 }
 
-.mainDetails {
+#mainDetails {
 	padding: 16px 64px;
-	background-color: white;
-	border: 2px solid #0336FF;
+	background-color: var(--background-color);
+	border: 2px solid var(--primaryColor);
 }
 
 #profilePicture {
@@ -55,8 +58,6 @@ html, body {
 
 #profilePicture img {
 	width: 100%;
-	height: auto;
-	-webkit-border-radius: 50px;
 	border-radius: 100%;
 }
 
@@ -68,12 +69,11 @@ html, body {
 #name h1 {
 	font-size: 2.5em;
 	font-weight: 700;
-	margin-bottom: -6px;
+	margin-bottom: -4px;
 }
 
 #name h2 {
 	font-size: 2em;
-	margin-left: 2px;
 }
 
 #contactDetails {
@@ -88,7 +88,7 @@ html, body {
 }
 
 #contactDetails ul li {
-	margin-bottom: 3px;
+	margin-bottom: 2px;
 }
 
 #contactDetails ul li a, a[href^=tel] {
@@ -99,17 +99,16 @@ html, body {
 #mainArea {
 	margin-top: 8px;
 	padding: 0 64px;
-	background-color: white;
-	border: 2px solid #0336FF;
+	background-color: var(--background-color);
+	border: 2px solid var(--primaryColor);
 }
 
 section {
-	border-top: 1px solid #0336FF;
-	padding: 16px 0 12px 0;
+	padding: 16px 0;
 }
 
-section:first-child {
-	border-top: none;
+section:not(:first-child) {
+	border-top: 1px solid var(--primaryColor);
 }
 
 .sectionTitle {
@@ -121,7 +120,7 @@ section:first-child {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-size: 1.5em;
-	color: #0336FF;
+	color: var(--primaryColor);
 }
 
 .sectionContent {
@@ -129,10 +128,13 @@ section:first-child {
 	width: 75%;
 }
 
+.sectionContent article:not(:last-child) {
+	margin-bottom: 16px;
+}
+
 * h2 {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	font-size: 1.5em;
-	margin-bottom: -2px;
 }
 
 p {
@@ -144,7 +146,7 @@ p {
 .subDetails {
 	font-size: 0.8em;
 	font-style: italic;
-	margin-bottom: 3px;
+	margin-bottom: 2px;
 }
 
 .sectionContent article p a, a[href^=tel] {
@@ -158,7 +160,7 @@ p {
 
 .skillsList {
 	padding: 0;
-	margin-bottom: 10px;
+	margin-bottom: 16px;
 	list-style-type: none;
 }
 
@@ -166,28 +168,35 @@ p {
 	column-count: 3;
 }
 
+.toolsTechnologiesList {
+	margin-bottom: 0;
+}
+
 .programmingLanguagesList {
 	column-count: 1;
 }
 
-.skillsList li:not(:last-child) {
-    margin-bottom: 4px;
+.skillsList li {
+    line-height: 1.4em;
 }
 
 .skillBarContainer {
 	float: right;
 	width: 100%;
-	background-color: #ddd;
-	border: 1px solid #0336FF;
+	background-color: #E0E0E0;
+	border: 1px solid var(--primaryColor);
 }
 
 .skillBar {
 	text-align: right;
-	padding-right: 20px;
 	line-height: 16px;
-	color: white;
-	background-color: #FFDE03;
-	color: black;
+	background-color: var(--secondaryColor);
+}
+
+.skillBar {
+	text-align: right;
+	line-height: 16px;
+	background-color: var(--secondaryColor);
 }
 
 .javaSkill {
@@ -196,16 +205,15 @@ p {
 .pythonSkill {
 	width: 70%;
 }
-.CCppSkill {
+.ccppSkill {
 	width: 60%;
 }
-.HTMLaSkill {
+.htmlSkill {
 	width: 60%;
 }
-.CSSSkill {
+.cssSkill {
 	width: 40%;
 }
-
 
 
 
@@ -237,6 +245,10 @@ p {
 
 	.sectionTitle, .sectionContent {
 		width: 100%;
+	}
+
+	.sectionTitle {
+		margin-bottom: 4px;
 	}
 
 	.generalSkillsList, .toolsTechnologiesList {
