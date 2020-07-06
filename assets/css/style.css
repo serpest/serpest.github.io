@@ -188,14 +188,7 @@ p {
 }
 
 .skillBar {
-	text-align: right;
-	line-height: 16px;
-	background-color: var(--secondaryColor);
-}
-
-.skillBar {
-	text-align: right;
-	line-height: 16px;
+	height: 16px;
 	background-color: var(--secondaryColor);
 }
 
