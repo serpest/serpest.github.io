@@ -1,13 +1,15 @@
 :root {
 	--primaryColor: #0336FF;
-	--secondaryColor: #FFDE03;
-	--background-color: white;
+	--secondaryColor: #03B3FF;
+	--textColor: black;
+	--backgroundColor: white;
 }
 
 * {
 	font: inherit;
 	font-size: 100%;
 	margin: 0;
+	color: var(--textColor);
 }
 
 html {
@@ -20,7 +22,7 @@ html {
 	list-style-type: none;
 	padding: 0;
 	overflow: hidden;
-	background-color: var(--background-color);
+	background-color: var(--backgroundColor);
 	border-bottom: 2px solid var(--primaryColor);
 
 }
@@ -30,7 +32,7 @@ html {
 }
 
 .navBarItem a {
-	color: black;
+	color: var(--textColor);
 	display: block;
 	text-align: center;
 	padding: 16px 16px;
@@ -47,7 +49,7 @@ html {
 
 #mainDetails {
 	padding: 16px 64px;
-	background-color: var(--background-color);
+	background-color: var(--backgroundColor);
 	border: 2px solid var(--primaryColor);
 }
 
@@ -93,7 +95,7 @@ html {
 	margin-bottom: 2px;
 }
 
-#contactDetails ul li a, a[href^=tel] {
+* a, a[href^=tel] {
 	color: inherit;
 	transition: all .3s ease-in;
 }
@@ -101,7 +103,7 @@ html {
 #mainArea {
 	margin-top: 8px;
 	padding: 0 64px;
-	background-color: var(--background-color);
+	background-color: var(--backgroundColor);
 	border: 2px solid var(--primaryColor);
 }
 
@@ -149,11 +151,6 @@ p {
 	font-size: 0.8em;
 	font-style: italic;
 	margin-bottom: 2px;
-}
-
-.sectionContent article p a, a[href^=tel] {
-	color: inherit;
-	transition: all .3s ease-in;
 }
 
 .clear {
