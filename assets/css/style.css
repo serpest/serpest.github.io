@@ -1,6 +1,7 @@
 :root {
 	--primaryColor: #0336FF;
 	--secondaryColor: #03B3FF;
+	--barBackgroundColor: #E0E0E0;
 	--textColor: black;
 	--backgroundColor: white;
 }
@@ -9,6 +10,9 @@
 	font: inherit;
 	font-size: 100%;
 	margin: 0;
+}
+
+h1, h2, p, li {
 	color: var(--textColor);
 }
 
@@ -28,6 +32,7 @@ html {
 }
 
 .navBarItem {
+	width: 25%;
 	float: left;
 }
 
@@ -182,7 +187,7 @@ p {
 .skillBarContainer {
 	float: right;
 	width: 100%;
-	background-color: #E0E0E0;
+	background-color: var(--barBackgroundColor);
 	border: 1px solid var(--primaryColor);
 }
 
