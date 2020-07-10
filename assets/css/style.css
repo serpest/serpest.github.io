@@ -12,6 +12,16 @@
 	margin: 0;
 }
 
+*::selection {
+	background: var(--secondaryColor);
+	color: var(--backgroundColor);
+}
+
+*::-moz-selection {
+	background: var(--secondaryColor);
+	color: var(--backgroundColor);
+}
+
 h1, h2, p, li {
 	color: var(--textColor);
 }
@@ -203,14 +213,22 @@ p {
 	width: 70%;
 }
 .ccppSkill {
-	width: 60%;
+	width: 65%;
 }
 .htmlSkill {
 	width: 60%;
 }
+.javascriptSkill {
+	width: 50%;
+}
+
 .cssSkill {
 	width: 40%;
 }
+.haskellSkill {
+	width: 30%;
+}
+
 
 
 
