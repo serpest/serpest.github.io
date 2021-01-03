@@ -42,7 +42,7 @@ html {
 }
 
 .navBarItem {
-	width: 25%;
+	width: 20%;
 	float: left;
 }
 
@@ -215,18 +215,11 @@ p {
 .ccppSkill {
 	width: 65%;
 }
-.htmlSkill {
-	width: 60%;
-}
 .javascriptSkill {
-	width: 50%;
-}
-
-.cssSkill {
-	width: 40%;
+	width: 30%;
 }
 .haskellSkill {
-	width: 30%;
+	width: 20%;
 }
 
 
