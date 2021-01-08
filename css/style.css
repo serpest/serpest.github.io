@@ -32,29 +32,7 @@ html {
 	background-color: var(--secondaryColor);
 }
 
-#navBar {
-	list-style-type: none;
-	padding: 0;
-	overflow: hidden;
-	background-color: var(--backgroundColor);
-	border-bottom: 2px solid var(--primaryColor);
-
-}
-
-.navBarItem {
-	width: 20%;
-	float: left;
-}
-
-.navBarItem a {
-	color: var(--textColor);
-	display: block;
-	text-align: center;
-	padding: 16px 16px;
-	text-decoration: none;
-}
-
-* a:hover {
+* a:hover, #profilePicture img:hover {
 	background-color: var(--secondaryColor);
 }
 
@@ -77,6 +55,7 @@ html {
 #profilePicture img {
 	width: 100%;
 	border-radius: 100%;
+	background-color: var(--textColor);
 }
 
 #name {
@@ -110,7 +89,7 @@ html {
 	margin-bottom: 2px;
 }
 
-* a, a[href^=tel] {
+* a, a[href^=tel], #profilePicture img {
 	color: inherit;
 	transition: all .3s ease-in;
 }
