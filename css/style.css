@@ -189,19 +189,11 @@ p {
 	width: 90%;
 }
 .pythonSkill {
-	width: 70%;
+	width: 80%;
 }
 .ccppSkill {
 	width: 65%;
 }
-.javascriptSkill {
-	width: 30%;
-}
-.haskellSkill {
-	width: 20%;
-}
-
-
 
 
 @media screen and (max-width: 780px) {
@@ -242,7 +234,6 @@ p {
 		column-count: 2;
 	}
 }
-
 
 
 @media screen and (max-width: 350px) {
