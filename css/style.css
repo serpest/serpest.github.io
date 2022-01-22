@@ -1,245 +1,44 @@
-:root {
-	--primaryColor: #0336FF;
-	--secondaryColor: #03B3FF;
-	--barBackgroundColor: #E0E0E0;
-	--textColor: black;
-	--backgroundColor: white;
-}
-
-* {
-	font: inherit;
-	font-size: 100%;
-	margin: 0;
-}
-
-*::selection {
-	background: var(--secondaryColor);
-	color: var(--backgroundColor);
-}
-
-*::-moz-selection {
-	background: var(--secondaryColor);
-	color: var(--backgroundColor);
-}
-
-h1, h2, p, li {
-	color: var(--textColor);
-}
-
-html {
-	font-family: 'Lato', helvetica, arial, sans-serif;
-	font-size: 16px;
-	background-color: var(--secondaryColor);
-}
-
-* a:hover, #profilePicture img:hover {
-	background-color: var(--secondaryColor);
+body {
+	background-color: #1E1E1E;
+	color: white;
 }
 
 #profile {
-	margin: 8px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: thick double #03B3FF;
+	border-radius: 5%;
+	padding: 10px;
 }
 
-#mainDetails {
-	padding: 16px 64px;
-	background-color: var(--backgroundColor);
-	border: 2px solid var(--primaryColor);
-}
-
-#profilePicture {
-	width: 5.5em;
-	float: left;
-	margin-right: 32px;
-}
-
-#profilePicture img {
-	width: 100%;
+#profile-picture img {
+	display: block;
+	margin: auto;
+	width: 6em;
+	border: thick double #03B3FF;
 	border-radius: 100%;
-	background-color: var(--textColor);
 }
 
-#name {
-	float: left;
-	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+#profile-name {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
 
-#name h1 {
-	font-size: 2.5em;
-	font-weight: 700;
-	margin-bottom: -4px;
+#profile-links ul {
+	text-align: center;
+	padding-left: 0;
 }
 
-#name h2 {
-	font-size: 2em;
+#profile-links li {
+	display: inline;
 }
 
-#contactDetails {
-	float: right;
+#profile-links a {
+	color: white;
 }
 
-#contactDetails ul {
-	padding: 0;
-	list-style-type: none;
-	font-size: 0.9em;
-	margin-top: 8px;
-	margin-bottom: 8px;
-}
-
-#contactDetails ul li {
-	margin-bottom: 2px;
-}
-
-* a, a[href^=tel], #profilePicture img {
-	color: inherit;
-	transition: all .3s ease-in;
-}
-
-#mainArea {
-	margin-top: 8px;
-	padding: 0 64px;
-	background-color: var(--backgroundColor);
-	border: 2px solid var(--primaryColor);
-}
-
-section {
-	padding: 16px 0;
-}
-
-section:not(:first-child) {
-	border-top: 1px solid var(--primaryColor);
-}
-
-.sectionTitle {
-	float: left;
-	width: 25%;
-}
-
-.sectionTitle h1 {
-	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	font-style: italic;
-	font-size: 1.5em;
-	color: var(--primaryColor);
-}
-
-.sectionContent {
-	float: right;
-	width: 75%;
-}
-
-.sectionContent article:not(:last-child) {
-	margin-bottom: 16px;
-}
-
-* h2 {
-	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
-}
-
-p {
-	font-size: 1em;
-	line-height: 1.4em;
-	margin-bottom: 4px;
-}
-
-.subDetails {
-	font-size: 0.8em;
-	font-style: italic;
-	margin-bottom: 2px;
-}
-
-.clear {
-	clear: both;
-}
-
-.skillsList {
-	padding: 0;
-	margin-bottom: 16px;
-	list-style-type: none;
-}
-
-.generalSkillsList, .toolsTechnologiesList {
-	column-count: 3;
-}
-
-.toolsTechnologiesList {
-	margin-bottom: 0;
-}
-
-.programmingLanguagesList {
-	column-count: 1;
-}
-
-.skillsList li {
-    line-height: 1.4em;
-}
-
-.skillBarContainer {
-	float: right;
-	width: 100%;
-	background-color: var(--barBackgroundColor);
-	border: 1px solid var(--primaryColor);
-}
-
-.skillBar {
-	height: 16px;
-	background-color: var(--secondaryColor);
-}
-
-.javaSkill {
-	width: 90%;
-}
-.pythonSkill {
-	width: 80%;
-}
-.ccppSkill {
-	width: 65%;
-}
-
-
-@media screen and (max-width: 780px) {
-
-	#navBar {
-		display: none;
-	}
-
-	#profilePicture {
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	#name, #contactDetails {
-		float: none;
-		text-align: center;
-		width: 100%;
-	}
-
-	#name, #contactDetails, .sectionTitle, .sectionContent {
-		float: none;
-	}
-
-	#mainArea {
-		padding: 0 16px;
-	}
-
-	.sectionTitle, .sectionContent {
-		width: 100%;
-	}
-
-	.sectionTitle {
-		margin-bottom: 4px;
-	}
-
-	.generalSkillsList, .toolsTechnologiesList {
-		column-count: 2;
-	}
-}
-
-
-@media screen and (max-width: 350px) {
-
-	.generalSkillsList, .toolsTechnologiesList {
-		column-count: 1;
-	}
-
+#profile-links a:hover {
+	color: #03B3FF;
 }
