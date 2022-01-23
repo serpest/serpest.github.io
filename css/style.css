@@ -8,6 +8,8 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 	border: thick double #03B3FF;
 	border-radius: 5%;
 	padding: 10px;
@@ -16,14 +18,17 @@ body {
 #profile-picture img {
 	display: block;
 	margin: auto;
-	width: 6em;
+	width: 7em;
 	border: thick double #03B3FF;
 	border-radius: 100%;
 }
 
 #profile-name {
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
+	font-size: 1.3em;
+}
+
+#profile-name h2 {
+	white-space: nowrap;
 }
 
 #profile-links ul {
