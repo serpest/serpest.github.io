@@ -1,0 +1,14 @@
+# Site settings
+title: serpest's website
+email: serpest@protonmail.com
+description: >-
+  Welcome to my personal website and blog! Here you can find
+  some information about me, my projects and my blog posts.
+url: https://serpest.github.io
+twitter_username: serpest0
+github_username: serpest
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
