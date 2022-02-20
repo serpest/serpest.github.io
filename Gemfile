@@ -6,6 +6,7 @@ gem "github-pages", "~> 223", group: :jekyll_plugins
 gem "minima", "~> 2.5"
 
 group :jekyll_plugins do
+  gem "jekyll-seo-tag", "~> 2.7"
   gem "jekyll-feed", "~> 0.15.1"
   gem "jekyll-sitemap", "~> 1.4"
 end

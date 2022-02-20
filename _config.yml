@@ -1,15 +1,21 @@
 # Site settings
-title: serpest's website
+title: serpest
+tagline: Personal website and blog
+author: serpest
 email: serpest@protonmail.com
 description: >-
-  Welcome to my personal website and blog! Here you can find
-  some information about me, my projects and my blog posts.
+  Here you can find some information about me, my projects and my blog posts.
 url: https://serpest.github.io
 twitter_username: serpest0
 github_username: serpest
 
+# Theme settings
+minima:
+  date_format: "%F"
+
 # Build settings
 theme: minima
 plugins:
+  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap

@@ -1,14 +1,16 @@
 ---
 layout: post
 title: 7 Tips to Learn Programming as Self-Taught
+description: What I wanted to know before I started this amazing journey.
 date: 2019-09-28
 categories: learning programming
+emoji: 👨‍🎓
 ---
 
 ![Python code](/assets/images/posts/659860c6337500ee88de62d9db621e690478d6f0cb481c0c7ecbd0d6914fcb33.jpg)
 
 Learning a topic from zero as self-taught is always a challenge, but if your aim is to learn programming, there are some tips that could help you.
-In this article I will explain what I wanted to know before I started this amazing *journey*.
+In this post I will explain what I wanted to know before I started this amazing *journey*.
 
 ## 1. Choose a simple programming language
 Start to study a simple language, because at the beginning the most important thing is to learn programming principles and logic. For *simple language* I mean a language with a simple syntax.
@@ -37,5 +39,5 @@ After having learnt language principles and syntax, start a personal project. It
 Another key advice is to get some code reviews from someone more experienced. If you don't know anyone that could help you, ask for help in the communities mentioned above.
 
 ## 7. There's always something else!
-The programming world is really various and big. When you finish to read a book, start a new one of different topic to extend your knowledge!
+The programming world is really various and big. When you finish to read a book, start to read a new one that deals with a different topic to extend your knowledge!
 When you'll find your favorite topic, begin to master it studying more specific books!
