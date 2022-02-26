@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div>
+  <h1 class="page-heading">{{ page.title | default: "Projects" }}</h1>
+
+  {{ content }}
+
+  {%- if site.projects.size > 0 -%}
+    <ul class="post-list">
+      {%- for project in site.projects -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <p>
+          {{ project.emoji }}
+          <a href="{{ project.repository }}">{{ project.name | escape }}</a>:
+          {{ project.description }}
+        </p>
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+</div>

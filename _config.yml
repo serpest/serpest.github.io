@@ -8,6 +8,10 @@ description: >-
 url: https://serpest.github.io
 twitter_username: serpest0
 github_username: serpest
+header_pages:
+  - projects.md
+  - blog.md
+  - about.md
 collections:
   projects:
     order:
