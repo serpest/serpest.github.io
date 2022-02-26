@@ -4,7 +4,7 @@ title: 7 Tips to Learn Programming as Self-Taught
 description: What I wanted to know before I started this amazing journey.
 date: 2019-09-28
 categories: learning programming
-emoji: 👨‍🎓
+emoji: 🎓
 ---
 
 ![Python code](/assets/images/posts/659860c6337500ee88de62d9db621e690478d6f0cb481c0c7ecbd0d6914fcb33.jpg)

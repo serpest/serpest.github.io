@@ -8,6 +8,15 @@ description: >-
 url: https://serpest.github.io
 twitter_username: serpest0
 github_username: serpest
+collections:
+  projects:
+    order:
+      - tidraw.md
+      - musicsync.md
+      - tictactoeplus.md
+      - rebuk.md
+      - imgselect.md
+      - sudokuresolver.md
 
 # Theme settings
 minima:
