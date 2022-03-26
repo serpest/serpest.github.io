@@ -12,6 +12,7 @@ header_pages:
   - projects.md
   - blog.md
   - about.md
+permalink: /blog/:categories/:title
 collections:
   projects:
     order:
