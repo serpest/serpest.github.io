@@ -9,7 +9,8 @@ layout: default
 
   {%- if site.projects.size > 0 -%}
     <ul class="post-list">
-      {%- for project in site.projects -%}
+      {%- assign projects = site.projects | sort: "index" -%}
+      {%- for project in projects -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <p>
