@@ -4,4 +4,4 @@ title: About
 permalink: /about
 ---
 
-Self-taught and passionate software developer who started to learn programming at the age of 13 and with many interests: from economics to philosophy.
+I'm **serpest**, a passionate software developer living in Italy. I have been studying programming as self-taught since I was 13 years old and I have many other interests: from finance to philosophy.
