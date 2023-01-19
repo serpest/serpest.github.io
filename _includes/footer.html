@@ -1,33 +1,34 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
+<footer class="site-footer">
   <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
+    <ul class="contact-list">
+      <li>{{ site.author }}</li>
+      <li><a href="mailto:{{ site.email }}" title="Email">{{ site.email }}</a></li>
+    </ul>
+    <ul class="social-media-list">
+      <li>
+        <a href="{{ "/feed.xml" | relative_url }}" target="_blank" title="RSS">
+          <svg class="social-media-icon">
+            <use xlink:href="{{ "/assets/images/social-icons.svg#rss" | relative_url }}"></use>
+          </svg>
+          RSS
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub">
+          <svg class="social-media-icon">
+            <use xlink:href="{{ "/assets/images/social-icons.svg#github" | relative_url }}"></use>
+          </svg>
+          {{ site.github_username }}
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Twitter">
+          <svg class="social-media-icon">
+            <use xlink:href="{{ "/assets/images/social-icons.svg#twitter" | relative_url }}"></use>
+          </svg>
+          {{ site.twitter_username }}
+        </a>
+      </li>
+    </ul>
   </div>
-
 </footer>

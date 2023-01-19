@@ -1,0 +1,58 @@
+/* General */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul { margin: 0; padding: 0; }
+body { font: 400 16px/1.5 sans-serif, "Segoe UI Emoji"; color: #ffffff; background-color: #000000; display:flex; flex-direction:column; min-height:100vh; }
+.site-header, h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul { margin-bottom: 15px; }
+
+/* Image */
+img { max-width: 100%; }
+
+/* Heading */
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+
+/* Link */
+a { color: #2196f3; text-decoration: none; }
+a:hover { color: #ffffff; text-decoration: underline; }
+
+/* Blockquote */
+blockquote { color: #828282; border-left: 4px solid #828282; padding-left: 15px; }
+
+/* Code formatting */
+pre { padding: 8px 15px; border: 1px solid #828282; border-radius: 3px; background-color: #181818; font-size: 15px; overflow-x: auto; }
+
+/* Wrapper */
+.wrapper { max-width: 720px; margin-right: auto; margin-left: auto; padding-right: 10px; padding-left: 10px; }
+
+/* Site header */
+.site-header { border-top: 5px solid #2196f3; border-bottom: 1px solid #2196f3; }
+.site-title { font-size: 26px; line-height: 54px; letter-spacing: -1px; float: left; }
+.site-title, .site-title:visited { color: #ffffff; }
+.site-nav { float: right; line-height: 54px; }
+.site-nav .page-link { color: #ffffff; }
+.site-nav .page-link:not(:last-child) { margin-right: 20px; }
+
+/* Site footer */
+.site-footer { border-top: 1px solid #828282; padding: 15px 0; }
+.contact-list, .social-media-list { list-style: none; margin-left: 0; }
+.social-media-list li { padding-top: 5px; }
+.social-media-icon { width: 16px; height: 16px; fill: #828282; padding-right: 5px; }
+
+/* Page */
+.page-header { font-size: 32px; }
+.page-content { flex: 1; }
+
+/* Project list */
+.project-list { margin-left: 0; list-style: none; }
+.project-list > li:not(:last-of-type) { margin-bottom: 20px; }
+
+/* Post list */
+.post-list { margin-left: 0; list-style: none; }
+.post-list > li:not(:last-of-type) { margin-bottom: 20px; }
+
+/* Post */
+.post-header { margin-bottom: 30px; }
+.post-title { font-size: 42px; line-height: 1;; letter-spacing: -1px; }
+.post-meta { font-size: 14px; color: #828282; }
+.post-content { margin-bottom: 30px; }
+.post-content h2 { font-size: 32px; }
+.post-content h3 { font-size: 26px; }
+.post-content h4 { font-size: 20px; }

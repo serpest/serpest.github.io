@@ -1,13 +1,14 @@
-# Site settings
 title: serpest
 tagline: Personal Website & Blog
+description: Here you can find some information about me, my projects and my blog posts
+
+url: https://serpest.github.io
+
 author: serpest
 email: serpest@protonmail.com
-description: >-
-  Here you can find some information about me, my projects and my blog posts.
-url: https://serpest.github.io
 twitter_username: serpest0
 github_username: serpest
+
 header_pages:
   - projects.md
   - blog.md
@@ -23,13 +24,9 @@ collections:
       - imgselect.md
       - sudokuresolver.md
 
-# Theme settings
-minima:
+settings:
   date_format: "%F"
 
-# Build settings
-theme: minima
 plugins:
-  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap

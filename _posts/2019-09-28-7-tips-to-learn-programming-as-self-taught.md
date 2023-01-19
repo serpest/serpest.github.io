@@ -3,6 +3,8 @@ layout: post
 title: 7 Tips to Learn Programming as Self-Taught
 description: What I wanted to know before I started this exciting journey.
 date: 2019-09-28
+modified_date: 2022-09-17
+author: serpest
 categories: learning programming
 emoji: 🎓
 ---

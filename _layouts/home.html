@@ -2,45 +2,35 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
+<div>
   {{ content }}
-
   {%- if site.projects.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.projects_list_title | default: "Projects" }}</h2>
-    <ul class="post-list">
-      {%- assign projects = site.projects | sort: "index" -%}
-      {%- for project in projects -%}
+    <h2>{{ page.project_list_title }}</h2>
+    <ul class="project-list">
+      {%- for project in site.projects -%}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <p>
           {{ project.emoji }}
-          <a href="{{ project.repository }}">{{ project.name | escape }}</a>:
+          <a href="{{ project.repository }}">{{ project.name }}</a>:
           {{ project.description }}
         </p>
       </li>
       {%- endfor -%}
     </ul>
   {%- endif -%}
-
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.posts_list_title | default: "Blog" }}</h2>
+    <h2>{{ page.post_list_title }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <p>
           {{ post.emoji }}
-          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>:
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>:
           {{ post.description }}
-          <span class="post-meta">[{{ post.date | date: date_format }}]</span>
+          <span class="post-meta">[{{ post.date | date: site.settings.date_format }}]</span>
         </p>
       </li>
       {%- endfor -%}
     </ul>
   {%- endif -%}
-
 </div>

@@ -3,24 +3,20 @@ layout: default
 ---
 
 <div>
-  <h1 class="page-heading">{{ page.title | default: "Blog" }}</h1>
-
+  <h1 class="page-header">{{ page.title }}</h1>
   {{ content }}
-
   {%- if site.posts.size > 0 -%}
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <p>
           {{ post.emoji }}
-          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>:
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>:
           {{ post.description }}
-          <span class="post-meta">[{{ post.date | date: date_format }}]</span>
+          <span class="post-meta">[{{ post.date | date: site.settings.date_format }}]</span>
         </p>
       </li>
       {%- endfor -%}
     </ul>
   {%- endif -%}
-
 </div>
