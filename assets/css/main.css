@@ -1,10 +1,10 @@
 /* General */
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul { margin: 0; padding: 0; }
 body { font: 400 16px/1.5 sans-serif, "Segoe UI Emoji"; color: #ffffff; background-color: #000000; display:flex; flex-direction:column; min-height:100vh; }
-.site-header, h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul { margin-bottom: 15px; }
+.site-header, .post-header, h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul { margin-bottom: 15px; }
 
 /* Image */
-img { max-width: 100%; }
+img { max-width: 100%; border-radius: 3px; }
 
 /* Heading */
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
@@ -37,7 +37,7 @@ pre { padding: 8px 15px; border: 1px solid #828282; border-radius: 3px; backgrou
 .social-media-icon { width: 16px; height: 16px; fill: #828282; padding-right: 5px; }
 
 /* Page */
-.page-header { font-size: 32px; }
+.page-title { font-size: 32px; }
 .page-content { flex: 1; }
 
 /* Project list */
@@ -49,10 +49,6 @@ pre { padding: 8px 15px; border: 1px solid #828282; border-radius: 3px; backgrou
 .post-list > li:not(:last-of-type) { margin-bottom: 20px; }
 
 /* Post */
-.post-header { margin-bottom: 30px; }
-.post-title { font-size: 42px; line-height: 1;; letter-spacing: -1px; }
+.post-header > h1 { margin-bottom: 0px; }
 .post-meta { font-size: 14px; color: #828282; }
 .post-content { margin-bottom: 30px; }
-.post-content h2 { font-size: 32px; }
-.post-content h3 { font-size: 26px; }
-.post-content h4 { font-size: 20px; }
