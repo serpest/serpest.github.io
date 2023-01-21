@@ -7,7 +7,8 @@ layout: default
   {%- if site.projects.size > 0 -%}
     <h2>{{ page.project_list_title }}</h2>
     <ul class="project-list">
-      {%- for project in site.projects -%}
+      {%- assign projects = site.projects | sort: "index" -%}
+      {%- for project in projects -%}
       <li>
         <p>
           {{ project.emoji }}
