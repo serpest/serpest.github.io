@@ -18,8 +18,8 @@ collections:
   projects:
     order:
       - tidraw.md
-      - lazyclip.md
       - musicsync.md
+      - lazyclip.md
       - tictactoeplus.md
       - rebuk.md
       - imgselect.md

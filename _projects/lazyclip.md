@@ -1,7 +1,7 @@
 ---
 name: LazyClip
 repository: https://github.com/serpest/LazyClip
-description: Automated clip maker that analyzes the audio's rhythm and builds the video clip with transitions that match the audio's rhythm.
+description: Automated video clip maker that synchronizes image transitions with the rhythm of the audio.
 emoji: 🎥
-index: 1
+index: 2
 ---
